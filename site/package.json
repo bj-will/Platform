@@ -1,0 +1,26 @@
+{
+  "name": "platform",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "node ./scripts/sync-env-to-frontend.js dev && vite",
+    "dev-prod": "node ./scripts/sync-env-to-frontend.js prod && vite",
+    "build": "node ./scripts/sync-env-to-frontend.js prod && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tabler/core": "^1.4.0",
+    "@tabler/icons-preact": "^3.0",
+    "dotenv": "^17.2.1",
+    "preact": "^10.15.0",
+    "preact-router": "^4.0.1",
+    "zustand": "^4.5.7"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.2.0",
+    "typescript": "^5.4.2",
+    "vite": "^5.2.0"
+  }
+}

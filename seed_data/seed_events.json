@@ -1,0 +1,32 @@
+[
+  {
+    "projectId": "test_project",
+    "title": "Test event",
+    "status": "Live",
+    "relatedProjectId": "test_project",
+    "bannerPic": "",
+    "categories": [
+      "wl", "event"
+    ],
+    "types": [],
+    "newsLink": "https://x.com/",
+    "rating": "3",
+    "date": "2025-08-24T00:00:00Z",
+    "description": "Short description"
+  },
+  {
+    "projectId": "test_project",
+    "title": "Test event",
+    "status": "Upcoming",
+    "relatedProjectId": "expedition",
+    "bannerPic": "",
+    "categories": [
+      "collab"
+    ],
+    "types": [],
+    "newsLink": "https://x.com/",
+    "rating": "5",
+    "date": "2025-11-24T00:00:00Z",
+    "description": "Short description"
+  }
+]

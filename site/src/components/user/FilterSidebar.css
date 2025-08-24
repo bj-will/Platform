@@ -1,0 +1,15 @@
+.filter-label {
+  font-size: .8rem;
+  color: #6c757d;
+  margin-bottom: .25rem;
+}
+
+.filter-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btn-active {
+  border: 2px solid var(--bs-primary);
+}

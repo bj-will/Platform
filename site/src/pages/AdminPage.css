@@ -1,0 +1,7 @@
+.admin-tabs .nav-link {
+  cursor: pointer;
+}
+
+.admin-tabs .nav-link.active {
+  font-weight: bold;
+}

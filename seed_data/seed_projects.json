@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Expedition",
+    "slug": "expedition",
+    "twitter": "expedition_pics",
+    "discord": "6RbTBhvvxj",
+    "site": "https://expedition.pics",
+    "is_primary": true,
+    "added": true
+  },
+  {
+    "name": "DeFi Avengers",
+    "slug": "deFi_avengers",
+    "twitter": "test",
+    "discord": "test",
+    "site": "https://example.com",
+    "added": true
+  },
+  {
+    "name": "Frankenstein's Lab",
+    "slug": "frankensteins_lab",
+    "twitter": "test",
+    "discord": "test",
+    "site": "https://example.com",
+    "added": true
+  },
+  {
+    "name": "Nap Time Nation",
+    "slug": "nap_time_nation",
+    "twitter": "test",
+    "discord": "test",
+    "site": "https://example.com",
+    "added": true
+  },
+  {
+    "name": "The Little Rascals",
+    "slug": "the_little_rascals",
+    "twitter": "test",
+    "discord": "test",
+    "site": "https://example.com",
+    "added": true
+  }
+]

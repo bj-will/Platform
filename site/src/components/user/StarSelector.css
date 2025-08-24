@@ -1,0 +1,4 @@
+  <StarSelector
+    value={filters.priority}
+    onChange={v => setFilters({ priority: v })}
+  />

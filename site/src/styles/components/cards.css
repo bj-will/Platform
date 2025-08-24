@@ -1,0 +1,17 @@
+
+.card-compact {
+  border-radius: 0.75rem;
+  cursor: pointer;
+
+}
+
+.card-with-logo {
+  display: flex;
+  align-items: center;
+}
+
+.card-with-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}

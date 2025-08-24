@@ -1,0 +1,18 @@
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.form-row label {
+  min-width: 120px;
+  font-weight: 500;
+  color: var(--tblr-body-color);
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  flex: 1;
+}
