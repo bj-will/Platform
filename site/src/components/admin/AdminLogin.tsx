@@ -1,5 +1,6 @@
 import { useState } from "preact/hooks"
 import { login } from '../../api/auth'
+import ProjectLogo from "../ui/ProjectLogo";
 
 export default function AdminLogin({ onLogin }) {
   const [username, setUsername] = useState("")
@@ -22,7 +23,7 @@ export default function AdminLogin({ onLogin }) {
       <div class="container-tight py-4">
         <div class="text-center mb-4">
           <a href="/" class="navbar-brand navbar-brand-autodark">
-            <img src="/static/logo.svg" height="36" alt="Logo" />
+            <ProjectLogo projectSlug={"expedition"} size={64}/>
           </a>
         </div>
 
