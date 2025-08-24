@@ -54,7 +54,6 @@ export default function Home(){
       .catch(e => { if (alive) setError(e?.message || 'Failed to load events') })
       .finally(() => { if (alive) setLoading(p => ({ ...p, events: false })) })
 
-    console.log(selectedProjectId, key, eventsByProject)
     return () => { alive = false }
   }, [selectedProjectId, projects])
 
@@ -67,7 +66,6 @@ export default function Home(){
   }, [projects, selectedProjectId])
   const currentEvents = currentProject ? eventsByProject[String(currentProject.id)] || [] : []
   const categories = [...new Set(currentEvents.flatMap(event => event.categories))]
-  console.log(categories)
 
   return (
     <div class="d-flex flex-column min-vh-100">

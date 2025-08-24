@@ -6,7 +6,6 @@ import EventCard from './EventCard'
 export default function EventsGrid({ projects, events }: { projects: Project[], events: EventItem[] }) {
   const projectMap = new Map<number, Project>()
   projects.forEach(p => projectMap.set(p.id, p))
-  console.log(events)
 
   const { search, status, tag, priority, hideCompleted, sort } = useUIStore(s => s.filters)
   const completions = useUIStore(s => s.completions)
@@ -16,7 +15,6 @@ export default function EventsGrid({ projects, events }: { projects: Project[], 
       .filter(([_, v]) => v.completed)
       .map(([id]) => Number(id))
   )
-  console.log(completedIds)
 
   const text = (x: string | null | undefined) => (x || '').toLowerCase()
   const now = Date.now()

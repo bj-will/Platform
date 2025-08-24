@@ -9,7 +9,6 @@ interface Props {
 }
 
 export default function ProjectsSidebar({ projects }: Props) {
-console.log(projects)
   const selected = useUIStore(s => s.selectedProjectId)
   const select = useUIStore(s => s.selectProject)
   const setFilters = useUIStore(s => s.setFilters)

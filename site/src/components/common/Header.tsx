@@ -3,7 +3,6 @@ import { useUIStore } from '../../store/uiStore'
 import { route } from 'preact-router'
 import { useState, useEffect } from 'preact/hooks';
 
-import WalletModal from '../WalletModal/WalletModal'
 import { IconSun, IconMoon } from '@tabler/icons-preact'
 
 export default function Header() {
@@ -55,24 +54,11 @@ export default function Header() {
               </button>
             </div>
           ) : (
-            <button class="btn btn-primary btn-sm" onClick={() => {}}>
+            <button class="btn btn-primary btn-sm d-none" onClick={() => {}}>
               Login
             </button>
           )}
         </div>
-        {/* Wallet Modal */}
-      {modalOpen && (
-        <WalletModal
-          token="{token}"
-          chain="cosmos"
-          onClose={() => {
-            setModalOpen(false)
-          }}
-          connectWallet={connectWallet}
-          connectStatus={"connectStatus"}
-          verifyStatus={"verifyStatus"}
-        />
-      )}
       </div>
     </header>
   )
