@@ -19,15 +19,15 @@ export default function Home(){
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    let alive = true
-    ;(async () => {
+    let alive = true;
+    (async () => {
       try {
         setLoading(p => ({ ...p, projects: true }))
         const ps = await fetchProjects()
         if (!alive) return
         setProjects(ps)
-        if (ps.length && !selectedProjectId) {
-          const primary = ps.find(p => p.is_primary)
+        if (ps.length) {
+          const primary = ps.find(p => p.isPrimary)
           selectProject(primary ? primary.id : ps[0].id)
         }
       } catch (e: any) {
@@ -60,7 +60,7 @@ export default function Home(){
   const currentProject = useMemo(() => {
     return (
       projects.find(p => String(p.id) === String(selectedProjectId)) ||
-      projects.find(p => p.is_primary) ||
+      projects.find(p => p.isPrimary) ||
       projects[0]
     )
   }, [projects, selectedProjectId])
