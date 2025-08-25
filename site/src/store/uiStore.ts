@@ -33,7 +33,7 @@ export const useUIStore = create<UIState>()(persist((set, get) => ({
   selectedProjectId: null,
   projects: [],
   darkMode: false,
-  filters: { search: '', status: [], tag: [] },
+  filters: { search: '', status: [], tag: [], sort: "date_desc" },
   completions: {},
   user: null,
 
