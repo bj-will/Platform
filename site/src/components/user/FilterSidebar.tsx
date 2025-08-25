@@ -3,7 +3,7 @@ import { useUIStore } from '../../store/uiStore'
 import StarSelector from './StarSelector'
 import './FilterSidebar'
 
-const statusOpts = ['live','upcoming','closed', 'inactive']
+const statusOpts = ['perks', 'live','upcoming', 'inactive']
 
 const sortOpts = [
   { value: 'priority_desc', label: 'Priority: High First' },
@@ -75,7 +75,7 @@ export default function FilterSidebar({ categories, filteredCount }: Props) {
                 class={`btn btn-sm ${filters.status.includes(s) ? `btn-primary ${statusColors[s]}` : 'btn-outline-secondary'}`}
                 onClick={() => setFilters({ status: toggle(filters.status, s) })}
               >
-                {s}
+                {s.toUpperCase()}
               </button>
             ))}
           </div>

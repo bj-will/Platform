@@ -226,10 +226,10 @@ export default function EventCard({
         {/* Description */}
         <p class="text-muted mb-3" style={{
           display: '-webkit-box',
-          WebkitLineClamp: 2,
+          WebkitLineClamp: 3,
           WebkitBoxOrient: 'vertical',
           overflow: 'hidden',
-          minHeight: '3em',
+          minHeight: '4.5em',
           lineHeight: '1.5em',
         }}
           dangerouslySetInnerHTML={{ __html: event.description }}
@@ -287,15 +287,21 @@ export default function EventCard({
           </div>
 
         {/* Timer */}
-        {timeLeft && (
-                  <small
-          class={`fw-bold mt-auto d-flex align-items-center gap-1 ${
+        <small
+          className={`fw-bold mt-auto d-flex align-items-center gap-1 ${
             isUrgent ? 'text-danger' : 'text-primary'
           }`}
         >
-            <IconClock size={14} /> {timeLeft}
-          </small>
-        )}
+          {timeLeft && event.status.toLowerCase() !== "perks" ? (
+            <>
+              <IconClock size={14} /> {timeLeft}
+            </>
+          ) : (
+            <>
+              &nbsp;
+            </>
+          )}
+        </small>
       </div>
       {/* Dark overlay when done */}
       {isComplete && (
